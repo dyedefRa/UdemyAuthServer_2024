@@ -11,12 +11,12 @@ namespace SharedLibrary.Dtos
         [JsonIgnore]
         public bool IsSuccess { get; set; }
 
-        public static Response<T> Success(T data, int statusCode)
+        public static Response<T> Success(T data, int statusCode = 200)
         {
             return new Response<T> { StatusCode = statusCode, Data = data, IsSuccess = true };
         }
 
-        public static Response<T> Success(int statusCode)
+        public static Response<T> Success(int statusCode = 200)
         {
             return new Response<T> { StatusCode = statusCode, Data = default, IsSuccess = true };
         }

@@ -34,3 +34,17 @@ Ardından DBContext onmodel crettingte topluca bu ayarları verdik
      >>>builder.ApplyConfigurationsFromAssembly(GetType().Assembly);
      base.OnModelCreating(builder);
  }
+
+ ----------------------------------------------------------------------------------------------
+ UdemyAuthServer.Service e  AutoMapper entegre edelim
+
+ NuGeT> AutoMapper 
+
+  UdemyAuthServer.Service > DtoMapper 
+  UdemyAuthServer.Service > ObjectMapper 
+  oluşturduk.
+
+  --------------------------------------------
+
+  null durumları vs tüm business kodların hepsini servis katmanında yaz.
+  Servisten çıkan data direk clienta gidecek olan datadır.!!!
